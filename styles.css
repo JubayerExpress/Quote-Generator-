@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --box-bg-color: #f4f4f4;
+    --button-bg-color: #007BFF;
+    --button-text-color: #fff;
+}
+
+body.dark-mode {
+    --bg-color: #333;
+    --text-color: #fff;
+    --box-bg-color: #444;
+    --button-bg-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.quote-box {
+    background-color: var(--box-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#quote {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#author {
+    font-size: 1rem;
+    color: #555;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#theme-toggle {
+    background-color: var(--button-bg-color);
+    margin-top: 20px;
+}
