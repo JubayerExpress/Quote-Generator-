@@ -1,53 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: all 0.3s ease;
-}
-
-:root {
-    --bg-color: #fff;
-    --text-color: #333;
-    --box-bg-color: #f4f4f4;
-    --button-bg-color: #007BFF;
-    --button-text-color: #fff;
-}
-
-body.dark-mode {
-    --bg-color: #333;
-    --text-color: #fff;
-    --box-bg-color: #444;
-    --button-bg-color: #0056b3;
-}
-
-.container {
+    font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    margin-bottom: 20px;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
 }
 
 .quote-box {
-    background-color: var(--box-bg-color);
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    width: 80%;
+    text-align: center;
     max-width: 600px;
+    width: 100%;
 }
 
 #quote {
@@ -57,28 +27,42 @@ h1 {
 
 #author {
     font-size: 1rem;
-    color: #555;
-}
-
-.controls {
     margin-bottom: 20px;
 }
 
 button {
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-    padding: 10px 20px;
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
     border: none;
+    background-color: #6200ea;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #3700b3;
 }
 
-#theme-toggle {
-    background-color: var(--button-bg-color);
+#author-search {
+    margin-top: 15px;
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #6200ea;
+    border-radius: 5px;
+}
+
+#search-results {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+#favorites-list {
     margin-top: 20px;
+}
+
+#favorites {
+    list-style-type: none;
+    padding: 0;
 }
