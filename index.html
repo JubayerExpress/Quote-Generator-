@@ -8,19 +8,29 @@
 </head>
 <body>
     <div class="quote-box">
-        <p id="quote">"Your quote will appear here."</p>
+        <p id="quote">"Quote will appear here."</p>
         <p id="author">- Author</p>
+        <select id="category-select">
+            <option value="inspirational">Inspirational</option>
+            <option value="funny">Funny</option>
+            <option value="love">Love</option>
+            <option value="success">Success</option>
+        </select>
         <button id="new-quote">New Quote</button>
-        <button id="read-aloud">Read Aloud</button>
         <button id="save-quote">Save to Favorites</button>
         <button id="show-favorites">Show Favorites</button>
+        <button id="read-aloud">Read Aloud</button>
         <button id="share-quote">Share Quote as Image</button>
+        <input type="text" id="author-search" placeholder="Search by author">
+        <button id="search-button">Search</button>
+
         <div id="favorites-list" style="display: none;">
             <h2>Your Favorite Quotes:</h2>
             <ul id="favorites"></ul>
         </div>
-        <input type="text" id="author-search" placeholder="Search by author">
-        <button id="search-button">Search</button>
         <div id="search-results"></div>
     </div>
-    <script src
+
+    <script src="script.js"></script>
+</body>
+</html>
